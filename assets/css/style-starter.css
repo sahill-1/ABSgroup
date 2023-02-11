@@ -41,7 +41,10 @@ Author URL: http://w3layouts.com
 ::before {
     box-sizing: border-box
 }
+/* changes */
 
+
+/* changes */
 @media (prefers-reduced-motion:no-preference) {
     :root {
         scroll-behavior: smooth
@@ -19328,7 +19331,7 @@ a.grid-link span {
 /*--/testimonials--*/
 /*--/video--*/
 .w3l-index5 {
-    background: url(../images/banner1.jpg) no-repeat;
+    background: url(../images/c55.jpg) no-repeat;
     -ms-background-size: cover;
     background-size: cover;
     z-index: 0;

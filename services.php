@@ -1,4 +1,3 @@
-
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -10,11 +9,12 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contact</title>
+    <title>Gallery</title>
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <?php include 'modal.php'; ?>
     <style>
         @media(max-width:992px){
             li.nav-item {
@@ -32,10 +32,12 @@ Author URL: http://w3layouts.com
         }
         .goog-te-gadget {
             color: transparent !important;
+        }
+        .goog-te-gadget {
             margin-top: 10px;
         }
         .inner-banner {
-            background: url(./assets/images/contact-banner.jpg) no-repeat center;
+            background: url(./assets/images/gallery-banner.jpg) no-repeat center;
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -44,7 +46,48 @@ Author URL: http://w3layouts.com
             position: relative;
             z-index: 0;
         }
-        /* FOOTER */
+
+        /* Gallery Section */
+        .gallery-section{
+            width: 85%;
+            border: 1px solid transparent;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .gallery-section-div{
+            width: 280px;
+            border: 1px solid transparent;
+            margin: 20px auto;
+            gap: 10px;
+        }
+        .gallery-section-div-img{
+            width: 280px;
+        }
+        .gallery-section-div-img img{
+            width: 280px;
+            height: 200px;
+        }
+        .gallery-section-div-button{
+            display: flex;
+            justify-content: center;
+        }
+        .gallery-section-div-button button{
+            width: 130px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #006837;
+            color: white;
+            font-weight: 700;
+            border: 1px solid darkgray;
+        }
+        .gallery-section-div-button button:hover{
+            color: #006837;
+            background-color: white;
+        }
+        /* Gallery Section */
+
+        /* Footer */
         .w3l-footer-text-style {
             margin-top: -60px;
         }
@@ -88,17 +131,18 @@ Author URL: http://w3layouts.com
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.php">Gallery</a>
+                            <a class="nav-link active" href="services.php">Gallery</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                         <div class="language">
                             <a id="google_translate_element"></a>
                         </div>
                     </ul>
                     <div class="hidden-details" style="text-align: center;">
-                        <p style="color: #faa429">+91-7572819409 <br> abhigya205@gmail.com</p>
+                    <p style="color: #faa429">+91-7572819409 <br> abhigya205@gmail.com</p>
                     </div>
                     <!-- <form action="#" method="GET" class="d-flex search-header">
                         <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search" required>
@@ -131,14 +175,14 @@ Author URL: http://w3layouts.com
                 <div class="w3breadcrumb-gids">
                     <div class="w3breadcrumb-left text-left">
                         <h2 class="inner-w3-title">
-                            Contact Us </h2>
+                            Gallery </h2>
                         <p class="inner-page-para mt-2">
-                            Stay Healthy, Stay Happy</p>
+                        No Compromise on Quality</p>
                     </div>
                     <div class="w3breadcrumb-right">
                         <ul class="breadcrumbs-custom-path">
                             <li><a href="index.php">Home</a></li>
-                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Contact Us</li>
+                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Gallery </li>
                         </ul>
                     </div>
                 </div>
@@ -147,86 +191,80 @@ Author URL: http://w3layouts.com
         </section>
     </div>
     <!--//inner-page-->
-    <!-- contact-form -->
-    <section class="w3l-contact-main" id="contact">
-        <div class="contact-infhny py-5">
-            <div class="container py-md-5">
-                <div class="title-content text-center mb-md-5 mb-4">
-                    <h6 class="title-subw3hny">Send us a message</h6>
-                    <h3 class="title-w3l mx-lg-5">Keep In Touch With Us.</h3>
-                    <p class="text-para mt-2">Enjoy peace of mind knowing that your order will be safe and of high quality.</p>
+    <!--/w3l-servicesblock-->
+    <!-- <section class="w3l-circles py-5" id="services">
+        <div class="container py-md-5 py-2">
+            
+            <div class="row w3l-circles">
+                <div class="col-lg-6 circles-left">
+                    <img src="assets/images/a6.jpg" alt="" class="radius-image img-fluid">
                 </div>
-                <div class="top-map">
-                    <div class="map-content-9">
-                        <form action="#" method="post">
-                            <div class="form-top1">
-
-                                <div class="form-top">
-                                    <div class="form-top-righ">
-                                        <textarea name="Message" id="Message" placeholder="Message*" required=""></textarea>
-                                    </div>
-                                    <div class="form-top-left">
-                                        <input type="text" name="Name" id="Name" placeholder="Name" required="">
-                                        <input type="number" name="Phone" placeholder="Your phone number" required="">
-                                        <input type="email" name="Sender" id="Sender" placeholder="Email*" required="">
-
-                                    </div>
-
-                                </div>
-                                <div class="text-center mt-5">
-                                    <button type="submit" class="btn btn-style btn-primary">Submit Now <i class="far fa-paper-plane ml-lg-3"></i></button>
-                                </div>
-                            </div>
-                        </form>
+                <div class="col-lg-6 circles-right mt-lg-0 mt-5 align-self  position-relative">
+                    <h6 class="title-subw3hny">what We Offer</h6>
+                    <h3 class="title-w3l mb-4">Providing High
+                        Quality <br>Products</h3>
+                    <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+                        elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+                    <div class="w3banner-content-btns">
+                        <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                        <a href="contact.html" class="btn btn-style btn-outline-dark mt-lg-5 mt-4">Contact Us <i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
+            
         </div>
-    </section>
-    <!-- //contact-form -->
-    <!-- contact map -->
-    <section class="w3l-contact-main" id="contact">
-        <div class="container">
-            <div class="map pt-lg-3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59354.44447148662!2d71.186031011646!3d21.599472492508067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395880c72d516845%3A0x4e950cffb505bb12!2sAmreli%2C%20Gujarat%20365601!5e0!3m2!1sen!2sin!4v1676010259067!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986613799748!3d40.69714941774136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e3!4m0!4m0!5e0!3m2!1sen!2sin!4v1570181661801!5m2!1sen!2sin" allowfullscreen=""></iframe> -->
-            </div>
-        </div>
-    </section>
-    <!-- //contact map -->
+    </section> -->
+    <!--//w3l-servicesblock-->
+    <!-- /content-4-->
 
-    <!--/contact-->
-    <section class="w3l-contact-main w3l-contact-info py-5" id="contact">
-        <div class="midd-w3 py-md-5">
+    <section class="w3l-content-4 py-5" id="features">
+        <div class="content-4-main py-lg-5 py-md-4 py-2">
             <div class="container">
-                <div class="row contact-infos pt-lg-4">
-                    <div class="col-lg-4 col-md-6 pe-lg-5">
-                        <div class="single-contact-infos">
-                            <div class="icon-box"> <span class="fas fa-map-marked-alt"></span></div>
-                            <div class="text-box">
-                                <h3 class="mb-2">Location</h3>
-                                <p>365601 District-Amreli <br> Gujrat</p>
+                <div class="content-info-in row align-items-center">
+                    <div class="content-left col-lg-6 pe-lg-5">
+                        <div class="row content4-right-grids mb-sm-5 mb-4 pb-3">
+                            <div class="col-2 content4-right-icon">
+                                <div class="content4-icon">
+                                    <span class="fas fa-tractor"></span>
+                                </div>
+                            </div>
+                            <div class="col-10 content4-right-info ps-lg-5">
+                                <h6><a href="#url">Agriculture Products</a></h6>
+                                <p>Today, small farms produce about a third of the world’s food, but large farms are prevalent.</p>
+                            </div>
+                        </div>
+                        <div class="row content4-right-grids mb-sm-5 mb-4 pb-3">
+                            <div class="col-2 content4-right-icon">
+                                <div class="content4-icon">
+                                    <span class="fas fa-carrot"></span>
+                                </div>
+                            </div>
+                            <div class="col-10 content4-right-info ps-lg-5">
+                                <h6><a href="#url">Fresh Vegetables</a></h6>
+                                <p>Vegetables are parts of plants that are consumed by humans or other animals as food. </p>
+                            </div>
+                        </div>
+                        <div class="row content4-right-grids">
+                            <div class="col-2 content4-right-icon">
+                                <div class="content4-icon">
+                                    <span class="fas fa-wine-bottle"></span>
+                                </div>
+                            </div>
+                            <div class="col-10 content4-right-info ps-lg-5">
+                                <h6><a href="#url">Fresh Fruits</a></h6>
+                                <p>Fruits are important sources of vitamins and carbohydrates like fiber and sugar. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-                        <div class="single-contact-infos">
-                            <div class="icon-box"> <span class="fas fa-blender-phone"></span></div>
-                            <div class="text-box">
-                                <h3 class="mb-2">Phone Numbers</h3>
-                                <p><a href="tel:+12 403-11-22-69">+91-7572819409</a></p>
-                                <!-- <p><a href="tel:+12 304-11-22-79">+12 304-11-22-79</a></p> -->
+                    <div class="HomeAboutImages col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                        <div class="row position-relative">
+                            <div class="col-6">
+                                <img src="assets/images/a1.jpg" alt="" class="radius-image img-fluid">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-                        <div class="single-contact-infos">
-                            <div class="icon-box"> <span class="fas fa-envelope-open-text"></span></div>
-                            
-                            <div class="text-box">
-                                <h3 class="mb-2">Emails</h3>
-                                <p> <a href="mailto:company@gmail.com">abhigya205@gmail.com</a></p>
-                                <!-- <p> <a href="mailto:support@gmail.com">support@gmail.com</a></p> -->
+                            <div class="col-6 mt-4">
+                                <img src="assets/images/a7.jpg" alt="" class="radius-image img-fluid mb-md-3 mb-2">
+                                <img src="assets/images/a8.jpg" alt="" class="radius-image img-fluid mt-md-3">
                             </div>
                         </div>
                     </div>
@@ -234,7 +272,205 @@ Author URL: http://w3layouts.com
             </div>
         </div>
     </section>
-    <!--//contact-->
+    <!-- /home-page-video-popup-->
+
+    <!-- Gallery-section -->
+    <h2 style="text-align: center; margin-top: 20px;">Our Products</h2>
+
+    <div class="gallery-section">
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (5).jpg" alt="">
+                <h4 style="text-align: center;">Tomato</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (1).jpg" alt="">
+                <h4 style="text-align: center;">Papaya</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (4).jpg" alt="">
+                <h4 style="text-align: center;">Onion</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (2).jpg" alt="">
+                <h4 style="text-align: center;">Apple</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (3).jpg" alt="">
+                <h4 style="text-align: center;">Carrot</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (6).jpg" alt="">
+                <h4 style="text-align: center;">Banana</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (7).jpg" alt="">
+                <h4 style="text-align: center;">Potato</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (8).jpg" alt="">
+                <h4 style="text-align: center;">Watermelon</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+        <div class="gallery-section-div">
+            <div class="gallery-section-div-img">
+                <img src="./assets/images/p (9).jpg" alt="">
+                <h4 style="text-align: center;">Cucumber</h4>
+            </div>
+            <div class="gallery-section-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry Now</button>
+            </div>
+        </div>
+    </div>
+            
+    <!-- Gallery-section -->
+    <!-- <section class="w3l-index5 py-5" id="about">
+        <div class="new-block py-md-5 py-3">
+            <div class="container">
+                <div class="row middle-section align-self">
+                    <div class="col-lg-6 video-info pe-lg-5">
+                        <div class="title-content text-left">
+                            <h6 class="title-subw3hny">Root With Nature</h6>
+                            <h3 class="title-w3l two pe-lg-5">For Strong economy, develop agriculture </h3>
+                            <a href="contact.html" class="btn btn-style btn-outline-light mt-sm-5 mt-4">Contact Now </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 history-info mt-5 ps-lg-5 align-self">
+                        <p class="vhny-para mt-3 pe-lg-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit
+                            consec tetur adipisi elit.
+                            Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
+                            officia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- //home-page-video-popup-->
+    <!-- card section -->
+    <section class="w3l-features-4">
+        <div class="features4-block py-5">
+            <div class="container py-md-5">
+                <div class="we-header text-center">
+                    <h6 class="title-subw3hny">Our Services</h6>
+                    <h3 class="title-w3l mb-5">What We’re Doing</h3>
+                </div>
+                <div class="row features4-grids">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features4-grid active">
+                            <div class="feature-images">
+                                <span class="fas fa-carrot"></span>
+                            </div>
+                            <h5><a href="#url">Fresh Vegetables</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                        <div class="features4-grid">
+                            <div class="feature-images">
+                                <span class="fas fa-tractor"></span>
+                            </div>
+                            <h5><a href="#url">Farm Products</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                        <div class="features4-grid">
+                            <div class="feature-images">
+                                <span class="fas fa-seedling"></span>
+                            </div>
+                            <h5><a href="#url">Organic Products</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                        <div class="features4-grid">
+                            <div class="feature-images">
+                                <span class="fas fa-bong"></span>
+                            </div>
+                            <h5><a href="#url">Awesome Quality</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="features4-grid">
+                            <div class="feature-images">
+                                <span class="fas fa-apple-alt"></span>
+                            </div>
+                            <h5><a href="#url">Fresh Fruits</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="features4-grid">
+                            <div class="feature-images">
+                                <span class="fas fa-headphones-alt"></span>
+                            </div>
+                            <h5><a href="#url">
+                                    Excellent Service</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="features4-grid">
+                            <div class="feature-images">
+                                <span class="fas fa-users"></span>
+                            </div>
+                            <h5><a href="#url">Qualified Staff</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="features4-grid">
+                            <div class="feature-images">
+                                <span class="fas fa-thumbs-up"></span>
+                            </div>
+                            <h5><a href="#url">Organic Solution</a></h5>
+                            <!-- <a href="#readmore" class="grid-link">Read More <span class="fa fa-arrow-right"></span></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //card section -->
     <!--/footer-->
     <footer class="w3l-footer-29-main">
         <div class="footer-29-w3l py-5">
@@ -259,7 +495,7 @@ Author URL: http://w3layouts.com
                 <div class="row footer-top-29 pt-lg-5 pt-sm-4">
                     <div class="col-lg-3 col-sm-6">
                         <div class="address-grid">
-                            <h5>365601 District-Amreli <br> Gujrat</h5>
+                        <h5>365601 District-Amreli <br> Gujrat</h5>
                             <p class="mt-4">We understand that it can be difficult to find time for grocery shopping. </p>
 
                         </div>
@@ -602,7 +838,7 @@ Author URL: http://w3layouts.com
 			}
 		}
 		newsletter_popup();
-    </script>
+    <script/>
 
 </body>
 
